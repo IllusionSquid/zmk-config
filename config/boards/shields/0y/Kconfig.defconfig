@@ -1,0 +1,23 @@
+if SHIELD_0Y_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "0y"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_0y_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "0y Right"
+
+endif
+
+if SHIELD_0Y_LEFT || SHIELD_0Y_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

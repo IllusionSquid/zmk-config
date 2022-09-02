@@ -1,0 +1,63 @@
+/*
+ * Copyright (c) 2021 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_game {
+            timeout-ms = <50>;
+            key-positions = <15 33>;
+            bindings = <&kp ESC>;
+        };
+    };
+
+	keymap {
+		compatible = "zmk,keymap";
+
+		// This is a sample keymap intended to be replaced with your own
+		base_layer {
+            // |    Q    |    W    |    F    |    P    |    B    |                                          |    J    |    L    |    U    |    Y    |    ;    |
+            // |    A    |    R    |    S    |    T    |    G    |                                          |    M    |    N    |    E    |    I    |    O    |
+            // |    Z    |    X    |    C    |    D    |    V    |                                          |    K    |    H    |    ,    |    .    |    /    |
+            //                                    |   Tab   |  Space  |  Ctrl   |            |   Alt   |  BSPC   |  ENTER  |
+			bindings = <
+				&kp Q     &kp W     &kp F     &kp P     &kp B                               &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+				&kp A     &kp R     &kp S     &kp T     &kp G                               &kp M     &kp N     &kp E     &kp I     &kp O
+				&kp Z     &kp X     &kp C     &kp D     &kp V                               &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
+				                              &kp TAB   &kp SPACE &kp LCTRL        &kp LALT &kp BSPC  &kp ENTER
+			>;
+		};
+        
+        special_layer {
+            // |         |         |    ~    |    `    |         |                                          |         |         |         |         |         |
+            // |    !    |    @    |    (    |    )    |    *    |                                          |    =    |    {    |    }    |    [    |    ]    |
+            // |    $    |    %    |    &    |    -    |         |                                          |    ^    |    +    |    _    |    |    |    \    |
+            //                                    |   Tab   |  Space  |  SW15   |            |  SW33   |  BSPC   |  ENTER  |
+			bindings = <
+				&kp Q     &kp W     &kp F     &kp P     &kp B                       &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+				&kp A     &kp R     &kp S     &kp T     &kp G                       &kp M     &kp N     &kp E     &kp I     &kp O
+				&kp Z     &kp X     &kp C     &kp D     &kp V                       &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
+				                              &kp TAB   &kp SPACE &kp E        &kp E &kp BSPC &kp ENTER
+			>;
+		};
+
+        function_layer {
+            // |         |         |         |   F11   |         |                                          |         |   F12   |         |         |         |
+            // |    1    |    2    |    3    |    4    |    5    |                                          |    6    |    7    |    8    |    9    |    0    |
+            // |   F1    |   F2    |   F3    |   F4    |   F5    |                                          |   F6    |   F7    |   F8    |   F9    |   F10   |
+            //                                    |   Tab   |  Space  |  SW15   |            |  SW33   |  BSPC   |  ENTER  |
+			bindings = <
+				&kp Q     &kp W     &kp F     &kp P     &kp B                       &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+				&kp A     &kp R     &kp S     &kp T     &kp G                       &kp M     &kp N     &kp E     &kp I     &kp O
+				&kp Z     &kp X     &kp C     &kp D     &kp V                       &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
+				                              &kp TAB   &kp SPACE &kp E        &kp E &kp BSPC &kp ENTER
+			>;
+		};
+	};
+};
