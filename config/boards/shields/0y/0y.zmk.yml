@@ -1,0 +1,11 @@
+file_format: "1"
+id: 0y
+name: 0y
+type: shield
+url: https://github.com/IllusionSquid/zmk-config
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - 0y_left
+  - 0y_right
