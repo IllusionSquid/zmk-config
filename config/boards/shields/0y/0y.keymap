@@ -9,9 +9,10 @@
 
 #define BASE 0
 #define QWERTY 1
-#define SPECIAL 2
-#define FUNC 3
-#define GAME 4
+#define NAV  2
+#define SPECIAL 3
+#define FUNC 4
+#define GAME 5
 
 / {
     combos {
@@ -43,9 +44,9 @@
             // |    Z    |    X    |    C    |    D    |    V    |                                          |    K    |    H    |    ,    |    .    |    /    |
             //                                    |   Tab   |  Space  |  Ctrl   |            |   Alt   |  BSPC   |  ENTER  |
 			bindings = <
-				&kp Q     &kp W     &kp F     &kp P     &kp B                               &kp J     &kp L     &kp U     &kp Y     &kp SEMI
-				&mt LSHIFT A     &kp R     &kp S     &kp T     &kp G                               &kp M     &kp N     &kp E     &kp I     &mt RSHIFT O
-				&kp Z     &kp X     &kp C     &kp D     &kp V                               &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
+				&kp Q        &kp W     &kp F     &kp P     &kp B                               &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+				&mt LSHIFT A &kp R     &kp S     &lt NAV T &kp G                               &kp M     &kp N     &kp E     &kp I     &mt RSHIFT O
+				&kp Z        &kp X     &kp C     &kp D     &kp V                               &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
 				                              &kp TAB   &lt SPECIAL SPACE &kp LCTRL        &kp LALT &lt FUNC BSPC  &kp ENTER
 			>;
 		};
@@ -60,6 +61,19 @@
 				&kp A     &kp S     &kp D     &kp F     &kp G                               &kp H     &kp J     &kp K     &kp L     &kp SEMI
 				&kp Z     &kp X     &kp C     &kp V     &kp B                               &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
 				                              &trans    &trans    &trans          &trans    &trans    &trans
+			>;
+		};
+
+        nav_layer {
+            // |         |         |         |         |         |                                          |         |         |         |         |         |
+            // |         |         |         |         |         |                                          |         |   LEFT  |    UP   |   DOWN  |  RIGHT  |
+            // |         |         |         |         |         |                                          |         |         |         |         |         |
+            //                                    |         |         |         |            |         |         |         |
+			bindings = <
+				&trans   &trans     &trans     &trans     &trans                       &trans     &trans  &trans  &trans  &trans
+				&trans   &trans     &trans     &trans     &trans                       &trans     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+				&trans   &trans     &trans     &trans     &trans                       &trans     &trans  &trans  &trans  &trans
+				                              &trans  &trans &trans        &trans &trans &trans
 			>;
 		};
         
