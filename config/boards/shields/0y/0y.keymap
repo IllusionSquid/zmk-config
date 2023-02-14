@@ -13,6 +13,7 @@
 #define SPECIAL 3
 #define FUNC 4
 #define GAME 5
+#define GAMETWO 6
 
 / {
     combos {
@@ -33,6 +34,21 @@
             bindings = <&tog GAME>;
         };
     };
+
+    // macros {
+    //     scr_shot: scr_shot {
+    //         label = "scr_shot";
+    //         compatible = "zmk,behavior-macro";
+    //         #binding-cells = <0>;
+    //         bindings
+    //             = <&macro_press &kp LSHFT>
+    //             , <&macro_press &kp LGUI>
+    //             , <&macro_tap &kp S>
+    //             , <&macro_release &kp LSHFT>
+    //             , <&macro_release &kp LGUI>
+    //             ;
+    //     };
+    // };
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -66,13 +82,13 @@
 
         nav_layer {
             // |         |         |         |         |         |                                          |         |         |         |         |         |
-            // |         |         |         |         |         |                                          |         |   LEFT  |    UP   |   DOWN  |  RIGHT  |
+            // |         |         |   OS    |   "T"   |         |                                          |         |   LEFT  |    UP   |   DOWN  |  RIGHT  |
             // |         |         |         |         |         |                                          |         |         |         |         |         |
             //                                    |         |         |         |            |         |         |         |
 			bindings = <
-				&trans   &trans     &trans     &trans     &trans                       &trans     &trans  &trans  &trans  &trans
-				&trans   &trans     &trans     &trans     &trans                       &trans     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-				&trans   &trans     &trans     &trans     &trans                       &trans     &trans  &trans  &trans  &trans
+				&trans   &trans     &trans     &trans     &trans                       &trans     &trans    &trans    &trans  &trans
+				&trans   &trans     &kp LGUI   &trans     &trans                       &trans     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+				&trans   &trans     &trans     &trans     &trans                       &trans     &trans    &trans    &trans  &trans
 				                              &trans  &trans &trans        &trans &trans &trans
 			>;
 		};
@@ -112,7 +128,20 @@
 				&kp TAB     &kp Q     &kp X     &kp E     &kp R                       &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans
 				&kp LSHIFT  &kp A     &kp W     &kp D     &kp F                       &trans     &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans
 				&kp LCTRL   &kp Z     &kp S     &kp C     &kp V                       &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans
-				                              &kp LALT  &kp SPACE &kp G        &kp E &kp BSPC &kp ENTER
+				                              &kp LALT  &kp SPACE &lt GAMETWO G        &kp E &kp BSPC &kp ENTER
+			>;
+		};
+
+        game_layer_two {
+            // |   Tab   |    Q    |    X    |    E    |    R    |                                          |         |   KP7   |   KP8   |   KP9   |         |
+            // |  SHIFT  |    A    |    W    |    D    |    F    |                                          |    6    |   KP4   |   KP5   |   KP6   |    0    |
+            // |  Ctrl   |    Z    |    S    |    C    |    V    |                                          |   F6    |   KP1   |   KP2   |   KP3   |   F10   |
+            //                                    |   Alt   |  Space  |    G    |            |  SW33   |  BSPC   |  ENTER  |
+			bindings = <
+				&trans     &kp N1     &kp N2     &kp N3     &kp N4                      &trans  &trans  &trans  &trans  &trans
+				&trans  &trans     &trans     &trans     &kp N8                         &trans  &trans  &trans  &trans  &trans
+				&trans   &kp N5     &trans     &kp N6     &kp N7                        &trans  &trans  &trans  &trans  &trans
+				                              &trans  &trans &trans        &trans  &trans  &trans
 			>;
 		};
 	};
