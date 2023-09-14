@@ -47,62 +47,62 @@
             timeout-ms = <TWOROW_MS>;
             key-positions = <10 20>;
             bindings = <&mt LSHIFT A>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
         combo_r {
             timeout-ms = <TWOROW_MS>;
             key-positions = <11 21>;
             bindings = <&kp R>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
         combo_s {
             timeout-ms = <TWOROW_MS>;
             key-positions = <12 22>;
             bindings = <&kp S>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
         combo_t {
             timeout-ms = <TWOROW_MS>;
             key-positions = <13 23>;
             bindings = <&lt NAV T>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
         combo_g {
             timeout-ms = <TWOROW_MS>;
             key-positions = <14 24>;
             bindings = <&kp G>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
 
         combo_m {
             timeout-ms = <TWOROW_MS>;
             key-positions = <15 25>;
             bindings = <&kp M>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
         combo_n {
             timeout-ms = <TWOROW_MS>;
             key-positions = <16 26>;
             bindings = <&kp N>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
         combo_e {
             timeout-ms = <TWOROW_MS>;
             key-positions = <17 27>;
             bindings = <&kp E>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
         combo_i {
             timeout-ms = <TWOROW_MS>;
             key-positions = <18 28>;
             bindings = <&kp I>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
         combo_o {
             timeout-ms = <TWOROW_MS>;
             key-positions = <19 29>;
             bindings = <&mt RSHIFT O>;
-            layers = <TWOROW>
+            layers = <TWOROW>;
         };
     };
 
