@@ -14,6 +14,9 @@
 #define FUNC 4
 #define GAME 5
 #define GAMETWO 6
+#define TWOROW 7
+
+#define TWOROW_MS 50
 
 / {
     combos {
@@ -32,6 +35,74 @@
             timeout-ms = <50>;
             key-positions = <30 31 34 35>;
             bindings = <&tog GAME>;
+        };
+        combo_tworow {
+            timeout-ms = <50>;
+            key-positions = <31 32 33 34>;
+            bindings = <&tog TWOROW>;
+        };
+
+
+        combo_a {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <10, 20>;
+            bindings = <&mt LSHIFT A>;
+            layers = <TWOROW>
+        };
+        combo_r {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <11, 21>;
+            bindings = <&kp R>;
+            layers = <TWOROW>
+        };
+        combo_s {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <12, 22>;
+            bindings = <&kp S>;
+            layers = <TWOROW>
+        };
+        combo_t {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <13, 23>;
+            bindings = <&lt NAV T>;
+            layers = <TWOROW>
+        };
+        combo_g {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <14, 24>;
+            bindings = <&kp G>;
+            layers = <TWOROW>
+        };
+
+        combo_m {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <15, 25>;
+            bindings = <&kp M>;
+            layers = <TWOROW>
+        };
+        combo_n {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <16, 26>;
+            bindings = <&kp N>;
+            layers = <TWOROW>
+        };
+        combo_e {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <17, 27>;
+            bindings = <&kp E>;
+            layers = <TWOROW>
+        };
+        combo_i {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <18, 28>;
+            bindings = <&kp I>;
+            layers = <TWOROW>
+        };
+        combo_o {
+            timeout-ms = <TWOROW_MS>;
+            key-positions = <19, 29>;
+            bindings = <&mt RSHIFT O>;
+            layers = <TWOROW>
         };
     };
 
@@ -142,6 +213,19 @@
 				&trans  &trans     &trans     &trans     &kp N8                         &trans  &trans  &trans  &trans  &trans
 				&trans   &kp N5     &trans     &kp N6     &kp N7                        &trans  &trans  &trans  &trans  &trans
 				                              &trans  &trans &trans        &trans  &trans  &trans
+			>;
+		};
+
+        two_row {
+            // |    Q    |    W    |    F    |    P    |    B    |                                          |    J    |    L    |    U    |    Y    |    ;    |
+            // |    A    |    R    |    S    |    T    |    G    |                                          |    M    |    N    |    E    |    I    |    O    |
+            // |    Z    |    X    |    C    |    D    |    V    |                                          |    K    |    H    |    ,    |    .    |    /    |
+            //                                    |   Tab   |  Space  |  Ctrl   |            |   Alt   |  BSPC   |  ENTER  |
+			bindings = <
+				&mt LSHIFT A &kp R     &kp S     &lt NAV T &kp G                               &kp M     &kp N     &kp E     &kp I     &mt RSHIFT O
+				&kp Q        &kp W     &kp F     &kp P     &kp B                               &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+				&kp Z        &kp X     &kp C     &kp D     &kp V                               &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
+				                              &mt LGUI TAB   &lt SPECIAL SPACE &kp LCTRL        &kp LALT &lt FUNC BSPC  &kp ENTER
 			>;
 		};
 	};
