@@ -45,62 +45,62 @@
 
         combo_a {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <10, 20>;
+            key-positions = <10 20>;
             bindings = <&mt LSHIFT A>;
             layers = <TWOROW>
         };
         combo_r {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <11, 21>;
+            key-positions = <11 21>;
             bindings = <&kp R>;
             layers = <TWOROW>
         };
         combo_s {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <12, 22>;
+            key-positions = <12 22>;
             bindings = <&kp S>;
             layers = <TWOROW>
         };
         combo_t {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <13, 23>;
+            key-positions = <13 23>;
             bindings = <&lt NAV T>;
             layers = <TWOROW>
         };
         combo_g {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <14, 24>;
+            key-positions = <14 24>;
             bindings = <&kp G>;
             layers = <TWOROW>
         };
 
         combo_m {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <15, 25>;
+            key-positions = <15 25>;
             bindings = <&kp M>;
             layers = <TWOROW>
         };
         combo_n {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <16, 26>;
+            key-positions = <16 26>;
             bindings = <&kp N>;
             layers = <TWOROW>
         };
         combo_e {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <17, 27>;
+            key-positions = <17 27>;
             bindings = <&kp E>;
             layers = <TWOROW>
         };
         combo_i {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <18, 28>;
+            key-positions = <18 28>;
             bindings = <&kp I>;
             layers = <TWOROW>
         };
         combo_o {
             timeout-ms = <TWOROW_MS>;
-            key-positions = <19, 29>;
+            key-positions = <19 29>;
             bindings = <&mt RSHIFT O>;
             layers = <TWOROW>
         };
