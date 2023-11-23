@@ -132,8 +132,8 @@
             // |    Z    |    X    |    C    |    D    |    V    |                                          |    K    |    H    |    ,    |    .    |    /    |
             //                                    |   Tab   |  Space  |  Ctrl   |            |   Alt   |  BSPC   |  ENTER  |
 			bindings = <
-				&kp Q        &kp W     &kp F     &kp P     &kp B                               &kp J     &kp L     &kp U     &kp Y     &bt BT_SEL 0
-				&mt LSHIFT A &kp R     &kp S     &lt NAV T &kp G                               &kp M     &kp N     &kp E     &kp I     &mt RSHIFT O
+				&kp Q        &kp W     &kp F     &kp P     &kp B                               &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+				&mt LSHIFT A &kp R     &kp S     &lt NAV T &kp G                               &kp M     &lt BTLAYER N     &kp E     &kp I     &mt RSHIFT O
 				&kp Z        &kp X     &kp C     &kp D     &kp V                               &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
 				                              &mt LGUI TAB   &lt SPECIAL SPACE &kp LCTRL        &kp LALT &lt FUNC BSPC  &kp ENTER
 			>;
@@ -231,17 +231,17 @@
 			>;
 		};
 
-        //bt_nav_layer {
-        //    // |         |         |         |         |         |                                          |         |         |         |         |         |
-        //    // |  BTPF0  |  BTFP1  |  BTPF2  |         |         |                                          |         |   "N"   |         |         |         |
-        //    // |         |         |         |         |         |                                          |         |         |         |         |         |
-        //    //                                    |         |         |         |            |         |         |         |
-		//	bindings = <
-		//		&trans          &trans          &trans          &trans     &trans                       &trans     &trans    &trans    &trans  &trans
-		//		&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &trans     &trans                       &trans     &trans    &trans    &trans  &trans
-		//		&trans          &trans          &trans          &trans     &trans                       &trans     &trans    &trans    &trans  &trans
-		//		                                                    &trans  &trans &trans        &trans &trans &trans
-		//	>;
-		//};
+        bt_nav_layer {
+            // |         |         |         |         |         |                                          |         |         |         |         |         |
+            // |  BTPF0  |  BTFP1  |  BTPF2  |         |         |                                          |         |   "N"   |         |         |         |
+            // |         |         |         |         |         |                                          |         |         |         |         |         |
+            //                                    |         |         |         |            |         |         |         |
+			bindings = <
+				&trans          &trans          &trans          &trans     &trans                       &trans     &trans    &trans    &trans  &trans
+				&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &trans     &trans                       &trans     &trans    &trans    &trans  &trans
+				&trans          &trans          &trans          &trans     &trans                       &trans     &trans    &trans    &trans  &trans
+				                                                    &trans  &trans &trans        &trans &trans &trans
+			>;
+		};
 	};
 };
