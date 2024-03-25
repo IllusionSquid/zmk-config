@@ -25,28 +25,28 @@
         compatible = "zmk,combos";
         combo_panic {
             timeout-ms = <50>;
-            key-positions = <31 34>;
+            key-positions = <30 33>;
             bindings = <&kp ESC>;
         };
         combo_qwerty {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <31 32>;
             bindings = <&tog QWERTY>;
         };
         combo_game {
             timeout-ms = <50>;
-            key-positions = <30 31 34 35>;
+            key-positions = <29 30 33 34>;
             bindings = <&tog GAME>;
         };
         combo_tworow {
             timeout-ms = <50>;
-            key-positions = <31 32 33 34>;
+            key-positions = <30 31 32 33>;
             bindings = <&tog TWOROW>;
         };
 
         combo_q {
                     timeout-ms = <TWOROW_MS>;
-                    key-positions = <10 20>;
+                    key-positions = <9  19>;
                     bindings = <&kp Q>;
                     layers = <BASE>;
         };
