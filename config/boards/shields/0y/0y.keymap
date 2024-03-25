@@ -44,6 +44,12 @@
             bindings = <&tog TWOROW>;
         };
 
+        combo_colon {
+                    timeout-ms = <TWOROW_MS>;
+                    key-positions = <18  28>;
+                    bindings = <&kp SEMI>;
+                    layers = <BASE>;
+        };
         combo_q {
                     timeout-ms = <TWOROW_MS>;
                     key-positions = <9  19>;
