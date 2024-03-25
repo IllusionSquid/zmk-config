@@ -44,7 +44,12 @@
             bindings = <&tog TWOROW>;
         };
 
-
+        combo_q {
+                    timeout-ms = <TWOROW_MS>;
+                    key-positions = <10 20>;
+                    bindings = <&kp Q>;
+                    layers = <BASE>;
+        };
         combo_a {
             timeout-ms = <TWOROW_MS>;
             key-positions = <10 20>;
@@ -133,7 +138,7 @@
             // |    Z    |    X    |    C    |    D    |    V    |                                          |    K    |    H    |    ,    |    .    |    /    |
             //                                    |   Tab   |  Space  |  Ctrl   |            |   Alt   |  BSPC   |  ENTER  |
 			bindings = <
-				&kp Q        &kp W     &kp F     &kp P     &kp B                               &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+				&trans       &kp W     &kp F     &kp P     &kp B                               &kp J     &kp L     &kp U     &kp Y     &kp SEMI
 				&mt LSHIFT A &kp R     &kp S     &lt NAV T &kp G                               &kp M     &lt BTLAYER N     &kp E     &kp I     &mt RSHIFT O
 				&kp Z        &kp X     &kp C     &kp D     &kp V                               &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
 				                              &mt LGUI TAB   &lt SPECIAL SPACE &kp LCTRL        &kp LALT &lt FUNC BSPC  &kp ENTER
@@ -146,7 +151,7 @@
             // |    Z    |    X    |    C    |    V    |    B    |                                          |    N    |    M    |    ,    |    .    |    /    |
             //                                    |         |         |         |            |         |         |         |
 			bindings = <
-				&kp Q     &kp W     &kp E     &kp R     &kp T                               &kp Y     &kp U     &kp I     &kp O     &kp P
+				&trans     &kp W     &kp E     &kp R     &kp T                               &kp Y     &kp U     &kp I     &kp O     &kp P
 				&mt LSHIFT A &kp S     &kp D     &lt NAV F     &kp G                               &kp H     &kp J     &kp K     &kp L      &mt RSHIFT SEMI
 				&kp Z     &kp X     &kp C     &kp V     &kp B                               &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
 				                              &trans    &trans    &trans          &trans    &trans    &trans
@@ -198,7 +203,7 @@
             // |  Ctrl   |    Z    |    S    |    C    |    V    |                                          |         |   KP1   |   KP2   |   KP3   |         |
             //                                    |   Alt   |  Space  |    G    |            |    Y    |  BSPC   |  ENTER  |
 			bindings = <
-				&kp TAB     &kp Q     &kp X     &kp E     &kp R                       &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans
+				&trans      &kp Q     &kp X     &kp E     &kp R                       &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans
 				&kp LSHIFT  &kp A     &kp W     &kp D     &kp F                       &trans     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp O
 				&kp LCTRL   &kp Z     &kp S     &kp C     &kp V                       &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans
 				                              &kp LALT  &kp SPACE &lt GAMETWO G        &kp Y &kp BSPC &kp ENTER
@@ -225,7 +230,7 @@
             // |    Z    |    X    |    C    |    D    |    V    |                                          |    K    |    H    |    ,    |    .    |    /    |
             //                                    |   Tab   |  Space  |  Ctrl   |            |   Alt   |  BSPC   |  ENTER  |
 			bindings = <
-				&mt LSHIFT A &kp R     &kp S     &lt NAV T &kp G                               &kp M     &kp N     &kp E     &kp I     &mt RSHIFT O
+				&trans       &kp R     &kp S     &lt NAV T &kp G                               &kp M     &kp N     &kp E     &kp I     &mt RSHIFT O
 				&kp Q        &kp W     &kp F     &kp P     &kp B                               &kp J     &kp L     &kp U     &kp Y     &kp SEMI
 				&kp Z        &kp X     &kp C     &kp D     &kp V                               &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
 				                              &mt LGUI TAB   &lt SPECIAL SPACE &kp LCTRL        &kp LALT &lt FUNC BSPC  &kp ENTER
