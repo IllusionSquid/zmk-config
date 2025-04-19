@@ -206,13 +206,13 @@
 		};
 
         game_layer_two {
-            // |   Tab   |    1    |    2    |    3    |    4    |                                          |         |   KP7   |   KP8   |   KP9   |         |
-            // |  SHIFT  |    A    |    W    |    D    |    8    |                                          |         |   KP4   |   KP5   |   KP6   |         |
+            // |   Tab   |    1    |    2    |    3    |    4    |                                          |         |   KP7   |   KP8   |   KP9   |  Insert |
+            // |  SHIFT  |    A    |    W    |    D    |    8    |                                          |         |   KP4   |   KP5   |   KP6   |  CapsL  |
             // |  Ctrl   |    5    |    S    |    6    |    7    |                                          |         |   KP1   |   KP2   |   KP3   |         |
             //                                    |   Alt   |  Space  |   "G"   |            |  SW33   |  BSPC   |  ENTER  |
 			bindings = <
-				&trans     &kp N1     &kp N2     &kp N3     &kp N4                      &trans  &trans  &trans  &trans  &trans
-				&trans  &trans     &trans     &trans     &kp N8                         &trans  &trans  &trans  &trans  &trans
+				           &kp N1     &kp N2     &kp N3     &kp N4                      &trans  &trans  &trans  &trans  &kp INSERT
+				&trans  &trans     &trans     &trans     &kp N8                         &trans  &trans  &trans  &trans  &kp CAPSLOCK
 				&trans   &kp N5     &trans     &kp N6     &kp N7                        &trans  &trans  &trans  &trans  &trans
 				                              &trans  &trans &trans        &trans  &trans  &trans
 			>;
