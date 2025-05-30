@@ -211,7 +211,7 @@
             // |  Ctrl   |    5    |    S    |    6    |    7    |                                          |         |   KP1   |   KP2   |   KP3   |         |
             //                                    |   Alt   |  Space  |   "G"   |            |  SW33   |  BSPC   |  ENTER  |
 			bindings = <
-				           &kp N1     &kp N2     &kp N3     &kp N4                      &trans  &trans  &trans  &trans  &trans
+				&trans  &kp N1     &kp N2     &kp N3     &kp N4                      &trans  &trans  &trans  &trans  &trans
 				&trans  &trans     &trans     &trans     &kp N8                         &trans  &trans  &trans  &trans  &trans
 				&trans   &kp N5     &trans     &kp N6     &kp N7                        &trans  &trans  &trans  &trans  &trans
 				                              &trans  &trans &trans        &trans  &trans  &trans
